@@ -1,0 +1,22 @@
+[project]
+name = "summ-ai"
+version = "1.0.0"
+description = "Fully local AI-powered meeting note-taker - captures system audio from any call app, transcribes and summarizes"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0.0",
+
+    "rich>=13.0.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+]
+
+[project.scripts]
+summ-ai = "notetaker.main:main"
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["notetaker*"]
