@@ -19,11 +19,8 @@
 
 ## What is Summ-AI?
 
-<<<<<<< HEAD
 Summ-AI is a vibecoded app that records everything you hear through your speakers or headset during a meeting -- regardless of which app you use (Teams, Zoom, Discord, WhatsApp, Google Meet, browser, etc.) -- and produces structured Markdown notes with topics, decisions, action items, and more.
-=======
-Summ-AI records everything you hear through your speakers or headset during a meeting -- regardless of which app you use (Teams, Zoom, Discord, WhatsApp, Google Meet, browser, etc.) -- and produces structured Markdown notes with topics, decisions, action items, and more.
->>>>>>> 325e9e0 (summ ai first commit)
+
 
 **Stack:** [whisper.cpp](https://github.com/ggerganov/whisper.cpp) (transcription) + [llama.cpp](https://github.com/ggerganov/llama.cpp) with Qwen3.5-9B (summarization) + ffmpeg + PulseAudio/PipeWire
 
@@ -46,26 +43,13 @@ Summ-AI records everything you hear through your speakers or headset during a me
 | Requirement | Why |
 |---|---|
 | **Linux** with PulseAudio or PipeWire | Audio capture uses monitor sources |
-<<<<<<< HEAD
-=======
-| **NVIDIA GPU** (8+ GB VRAM recommended) | Runs Whisper + Qwen3.5 on GPU simultaneously |
->>>>>>> 325e9e0 (summ ai first commit)
 | **Python 3.11+** | Runtime |
 | **ffmpeg** | Audio capture from monitor sources |
 | **git** | To clone repos |
 | **CMake + C++ compiler** | To build whisper.cpp and llama.cpp |
-<<<<<<< HEAD
-
 ### Resource usage
 
 Both models run on GPU simultaneously, for testing purposes I have used successfully:
-=======
-| **CUDA toolkit** | For GPU-accelerated inference |
-
-### Resource usage
-
-Both models run on GPU simultaneously:
->>>>>>> 325e9e0 (summ ai first commit)
 
 | Component | VRAM | Notes |
 |---|---|---|
@@ -79,11 +63,7 @@ Both models run on GPU simultaneously:
 If you already have whisper.cpp and llama.cpp built, and a Whisper model downloaded:
 
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/guimo-dev/summ-ai.git
-=======
-git clone https://github.com/YOUR_USERNAME/summ-ai.git
->>>>>>> 325e9e0 (summ ai first commit)
 cd summ-ai
 
 python3 -m venv .venv
